@@ -1073,7 +1073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 643352868}
   m_Layer: 0
-  m_Name: Rock Socket Interactors
+  m_Name: Ammunition Socket Interactors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5582,6 +5582,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   catapultAnimator: {fileID: 5713151186115532109}
+  ammunitionSocketInteractor: {fileID: 806668604}
+  projectile: {fileID: 0}
 --- !u!1 &4943301995006851600
 GameObject:
   m_ObjectHideFlags: 0
