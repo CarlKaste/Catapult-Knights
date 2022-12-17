@@ -22,9 +22,7 @@ public class Catapult : MonoBehaviour
     [SerializeField]
     private GameObject ammunitionDestroyer;
 
-    [SerializeField]
-    private float projectileForce;
-
+    public float projectileForce;
 
 
     public void ActivateLever()
