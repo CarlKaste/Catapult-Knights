@@ -11,7 +11,7 @@ public class FortTrigger : MonoBehaviour
     {
         if (other.CompareTag("Flag"))
         {
-            gameManager.WinGame();
+            gameManager.GameWon();
         }
     }
 }
