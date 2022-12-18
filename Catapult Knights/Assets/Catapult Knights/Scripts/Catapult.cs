@@ -22,11 +22,21 @@ public class Catapult : MonoBehaviour
     [SerializeField]
     private GameObject ammunitionDestroyer;
 
+    [SerializeField]
+    private AudioSource catapultAudioSource;
+
     public float projectileForce;
 
 
     public void ActivateLever()
     {
+        StartCoroutine(LeverActivation());
+    }
+
+    IEnumerator LeverActivation()
+    {
+        catapultAudioSource.Play();
+        yield return new WaitForSeconds(0.3f);
         catapultAnimator.SetBool("ReadyToShoot", false);
         catapultGuardAnimator.SetBool("CatapultShoots", true);
         ammunitionSocketInteractor.SetActive(false);

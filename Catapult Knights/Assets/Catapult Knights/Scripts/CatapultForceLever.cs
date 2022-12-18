@@ -10,6 +10,15 @@ public class CatapultForceLever : MonoBehaviour
     [SerializeField]
     private Transform leverReference;
 
+    [SerializeField]
+    private float lowestProjectileForce;
+
+    [SerializeField]
+    private float mediumProjectileForce;
+
+    [SerializeField]
+    private float highestProjectileForce;
+
     private int leverPositionSelected;
 
     private Vector3 leverOffsetPos1 = new Vector3(0.12f, 0.1f, 0f);
@@ -20,7 +29,7 @@ public class CatapultForceLever : MonoBehaviour
     {
         leverReference.position = transform.position + leverOffsetPos1;
         leverPositionSelected = 1;
-        catapultReference.projectileForce = 4500;
+        catapultReference.projectileForce = lowestProjectileForce;
     }
 
     public void ChangeLeverPosition()
@@ -35,19 +44,19 @@ public class CatapultForceLever : MonoBehaviour
 
         if(leverPositionSelected == 1)
         {
-            catapultReference.projectileForce = 4500;
+            catapultReference.projectileForce = lowestProjectileForce;
             leverReference.position = transform.position + leverOffsetPos1;
         }
 
         if (leverPositionSelected == 2)
         {
-            catapultReference.projectileForce = 5250;
+            catapultReference.projectileForce = mediumProjectileForce;
             leverReference.position = transform.position + leverOffsetPos2;
         }
 
         if (leverPositionSelected == 3)
         {
-            catapultReference.projectileForce = 6000;
+            catapultReference.projectileForce = highestProjectileForce;
             leverReference.position = transform.position + leverOffsetPos3;
         }
     }
