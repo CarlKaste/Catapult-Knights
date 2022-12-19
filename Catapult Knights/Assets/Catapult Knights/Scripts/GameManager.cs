@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject gameWonScreen;
 
+    [SerializeField]
+    private GameObject gameLostScreen;
 
     private int selectedScreen;
 
@@ -94,6 +96,12 @@ public class GameManager : MonoBehaviour
         selectedScreen = 1;
     }
     
+    public void RestartLevel()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+    }
+
     public void GameWon()
     {
         gameWonScreen.SetActive(true);
