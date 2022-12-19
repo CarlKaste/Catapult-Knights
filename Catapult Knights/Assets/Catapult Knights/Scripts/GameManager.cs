@@ -28,10 +28,6 @@ public class GameManager : MonoBehaviour
 
     public bool fortDestroyed;
 
-    private void Start()
-    {
-        
-    }
 
     private void Update()
     {
