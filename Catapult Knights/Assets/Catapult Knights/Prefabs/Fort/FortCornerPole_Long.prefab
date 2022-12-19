@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3641716418132579183}
   - component: {fileID: 4629214805870117071}
   m_Layer: 0
-  m_Name: WallCornerPole
+  m_Name: FortCornerPole_Long
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
