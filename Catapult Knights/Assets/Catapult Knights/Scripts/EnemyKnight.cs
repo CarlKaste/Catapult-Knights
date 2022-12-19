@@ -10,11 +10,11 @@ public class EnemyKnight : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
-    private void Update()
+    private void Update() // Gör så att fienderiddarna faller platt på marken då man slagit ner flaggan (då funktionen GameWon() anropats)
     {
         if(gameManager.fortDestroyed == true)
         {
-            animator.SetBool("FortDestroyed", true);
+            animator.SetBool("FortDestroyed", true); // Aktiverar animationen
         }
     }
 }

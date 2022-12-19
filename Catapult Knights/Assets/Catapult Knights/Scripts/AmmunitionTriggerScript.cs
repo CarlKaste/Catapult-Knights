@@ -7,6 +7,6 @@ public class AmmunitionTriggerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
+        Destroy(other.gameObject); //Förstör projektilen som spawnar i skopan
     }
 }
