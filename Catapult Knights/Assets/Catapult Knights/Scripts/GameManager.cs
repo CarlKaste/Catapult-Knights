@@ -26,6 +26,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject gameLostScreen;
 
+    [SerializeField]
+    private GameObject retryButton;
+
     private int selectedScreen;
 
     public bool fortDestroyed;
@@ -67,6 +70,7 @@ public class GameManager : MonoBehaviour
             firstCatapultInstructionScreen.SetActive(false);
             secondCatapultInstructionScreen.SetActive(false);
             gameInstructionScreen.SetActive(false);
+            retryButton.SetActive(true);
         }
     }
 
