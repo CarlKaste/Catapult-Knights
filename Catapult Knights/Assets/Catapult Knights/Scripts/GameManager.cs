@@ -23,12 +23,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject gameWonScreen;
 
-    int selectedScreen;
+    private int selectedScreen;
+
+    public bool fortDestroyed;
 
     private void Start()
     {
-        introductionScreen.SetActive(true);
-        selectedScreen = 1;
+        
     }
 
     private void Update()
@@ -83,19 +84,27 @@ public class GameManager : MonoBehaviour
     {
         levelWonScreen.SetActive(true);
     }
-    
+    */
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        selectedScreen = 1;
     }
-    */
+    
     public void GameWon()
     {
         gameWonScreen.SetActive(true);
+        fortDestroyed = true;
     }
+
     public void EndGame()
     {
         gameWonScreen.SetActive(false);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

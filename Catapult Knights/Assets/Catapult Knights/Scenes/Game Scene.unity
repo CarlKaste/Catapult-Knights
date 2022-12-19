@@ -12402,54 +12402,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583939610}
   m_Mesh: {fileID: 4300000, guid: b5a80b3e2a089b841b155d7c7f461e7c, type: 3}
---- !u!1 &586365480
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 586365481}
-  - component: {fileID: 586365482}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &586365481
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586365480}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &586365482
+--- !u!114 &586365482 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8896834613604697955, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+  m_PrefabInstance: {fileID: 8896834614182411593}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586365480}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4202eda0a564a92438fe0ec1de14b79d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introductionScreen: {fileID: 242170017}
-  firstCatapultInstructionScreen: {fileID: 903534727}
-  secondCatapultInstructionScreen: {fileID: 608803823}
-  gameInstructionScreen: {fileID: 2007666473}
-  levelWonScreen: {fileID: 247461023}
 --- !u!1 &592736571
 GameObject:
   m_ObjectHideFlags: 0
@@ -52753,7 +52716,7 @@ Animator:
   m_GameObject: {fileID: 6042172980604325602}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 26de234d43fc2b34781c0937723cdca4, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 18407a04d7c87274aa17d29a6a6f5858, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -57045,7 +57008,7 @@ Animator:
   m_GameObject: {fileID: 7001549952596344068}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 26de234d43fc2b34781c0937723cdca4, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: af1a7a86d9ee3054ea1746bf94dd32d7, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -60837,13 +60800,28 @@ GameObject:
   m_Component:
   - component: {fileID: 6382107532865967192}
   - component: {fileID: 1040859452303986210}
+  - component: {fileID: 6042172980604325603}
   m_Layer: 0
-  m_Name: Castle Guard 02@T-Pose (1)
+  m_Name: Enemy Knight 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6042172980604325603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6042172980604325602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d0ff6af4052d34899abd6f3339e0d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 586365482}
+  animator: {fileID: 1040859452303986210}
 --- !u!1 &6043320314028860065
 GameObject:
   m_ObjectHideFlags: 0
@@ -61182,7 +61160,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6042172980604325602}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -62.577, y: 8.514, z: 1.662}
+  m_LocalPosition: {x: -60, y: 0, z: 5.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2011045569180807969}
@@ -61837,13 +61815,28 @@ GameObject:
   m_Component:
   - component: {fileID: 7665496253267453886}
   - component: {fileID: 4359903276291194308}
+  - component: {fileID: 7001549952596344069}
   m_Layer: 0
-  m_Name: Castle Guard 02@T-Pose
+  m_Name: Enemy Knight 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7001549952596344069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7001549952596344068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d0ff6af4052d34899abd6f3339e0d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 586365482}
+  animator: {fileID: 4359903276291194308}
 --- !u!4 &7002463270584960950
 Transform:
   m_ObjectHideFlags: 0
@@ -63110,7 +63103,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7001549952596344068}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -62.577, y: 8.514, z: -0.9499999}
+  m_LocalPosition: {x: -60, y: 0, z: -5.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2961177831174766791}
@@ -63979,6 +63972,83 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &8896834614182411593
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8896834613604697952, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697952, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697952, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697952, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697952, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697952, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697952, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697952, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697952, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697952, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697952, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697953, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896834613604697955, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: levelWonScreen
+      value: 
+      objectReference: {fileID: 247461023}
+    - target: {fileID: 8896834613604697955, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: introductionScreen
+      value: 
+      objectReference: {fileID: 242170017}
+    - target: {fileID: 8896834613604697955, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: gameInstructionScreen
+      value: 
+      objectReference: {fileID: 2007666473}
+    - target: {fileID: 8896834613604697955, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: firstCatapultInstructionScreen
+      value: 
+      objectReference: {fileID: 903534727}
+    - target: {fileID: 8896834613604697955, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
+      propertyPath: secondCatapultInstructionScreen
+      value: 
+      objectReference: {fileID: 608803823}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e64b9b08afc416943bd7cbda6d67cf2c, type: 3}
 --- !u!4 &8903058274003381998
 Transform:
   m_ObjectHideFlags: 0
