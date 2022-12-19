@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Catapult Knights/Scenes/Main Menu.unity
+    guid: a530c453574672e42a53e321cbec8faa
+  - enabled: 1
+    path: Assets/Catapult Knights/Scenes/Game Scene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 235d4a818a96b694a83e37701bcfc6ed, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 83d5eb56b29e60d4ea0e02d95f908d02, type: 2}

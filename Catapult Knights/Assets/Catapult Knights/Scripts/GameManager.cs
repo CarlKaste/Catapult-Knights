@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject gameWonScreen;
 
+
     private int selectedScreen;
 
     public bool fortDestroyed;
@@ -88,6 +89,12 @@ public class GameManager : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(StartIntroduction());
+    }
+
+    IEnumerator StartIntroduction()
+    {
+        yield return new WaitForSeconds(1);
         selectedScreen = 1;
     }
     
