@@ -95,7 +95,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         selectedScreen = 1;
     }
-    
+
     public void RestartLevel()
     {
         Scene scene = SceneManager.GetActiveScene();
